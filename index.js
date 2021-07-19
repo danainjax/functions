@@ -56,3 +56,21 @@ const degreesFahrenheit = function(degreesCelsius) {
     return degreesCelsius * 1.8 +32 + " degrees Fahrenheit";
 };
 console.log(degreesFahrenheit(23))
+
+//Arrow functions
+
+const horn = () => { console.log('hootie hoo!'); }
+horn();
+let firstName = "Billy "
+const name = name => console.log(firstName + 'Smith');
+name();
+
+const min = (a, b) => { return Math.min(a, b); };
+console.log(min(100, -20));
+console.log(min(10, 4500));
+
+
+
+
+
+

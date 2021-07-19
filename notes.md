@@ -47,3 +47,17 @@ function awake() {
 Function declarations are not part of the regular top-to-bottom flow of control. They are conceptually moved to the top of their scope and can be used by all the code in that scope. This is sometimes useful because it offers the freedom to order code in a way that seems meaningful, without worrying about having to define all functions before they are used.
 
 # Arrow Functions
+
+There’s a third notation for functions, which looks very different from the others. Instead of the function keyword, it uses an arrow (=>) 
+The arrow comes after the list of parameters and is followed by the function’s body. It expresses something like “this input (the parameters) produces this result (the body)”.
+
+The arrow comes after the list of parameters and is followed by the function’s body. It expresses something like “this input (the parameters) produces this result (the body)”.
+
+When there is only one parameter name, you can omit the parentheses around the parameter list. If the body is a single expression, rather than a block in braces, that expression will be returned from the function.
+When an arrow function has no parameters at all, its parameter list is just an empty set of parentheses.
+
+
+Example:
+``
+const horn = () => { console.log('hootie hoo!'); }
+horn();
